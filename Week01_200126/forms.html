@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+    <h1>Admission Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="First Last"><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+            <br><br>
+
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="3" cols="40" placeholder="Street, City, State, ZIP" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact & Education</legend>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com"><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9+\- ()]{7,}" placeholder="+1 555 555 5555"><br><br>
+
+            <label for="course">Course Applying For:</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select --</option>
+                <option value="cs">B.Sc Computer Science</option>
+                <option value="eng">B.A. English</option>
+                <option value="bus">BBA</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <label for="qual">Previous Qualification:</label>
+            <input type="text" id="qual" name="qual" placeholder="e.g., High School, Diploma"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Declaration</legend>
+            <label><input type="checkbox" name="terms" required> I hereby declare that the information provided is true.</label>
+        </fieldset>
+
+        <p>
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+    
+</body>
+</html>

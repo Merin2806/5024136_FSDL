@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images and Multimedia</title>
+    <style>
+        img {
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+        iframe {
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Images and Multimedia</h1>
+
+    <section>
+        <h2>Images</h2>
+        <p>Basic image:</p>
+        <img src="https://images.unsplash.com/photo-1764366795867-a0e7fcbf791e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8" alt="Unsplash image" width="300" height="200">
+
+        <p>Image with figure and caption:</p>
+        <figure>
+            <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?w=400&h=300&fit=crop" alt="Forest path" width="400" height="300">
+            <figcaption>Figure 1: Example image with caption</figcaption>
+        </figure>
+
+        <p>Responsive image:</p>
+        <img src="https://images.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="Tree in field" style="max-width: 100%; height: auto;">
+    </section>
+
+    <section>
+        <h2>Audio</h2>
+        <p>Basic audio player:</p>
+        <audio controls>
+            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p>Audio with multiple sources:</p>
+        <audio controls>
+            <source src="audio/sample.mp3" type="audio/mpeg">
+            <source src="audio/sample.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section>
+        <h2>Video</h2>
+        <p>Basic video player:</p>
+        <video width="320" height="240" controls>
+            <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>Video with poster and subtitles:</p>
+        <video width="320" height="240" controls poster="https://via.placeholder.com/320x240">
+            <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+            <track kind="subtitles" src="subtitles.vtt" srclang="en" label="English">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Embedded Content</h2>
+        <p>YouTube video embed:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>Embedded PDF:</p>
+        <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" width="600" height="400" title="Embedded PDF"></iframe>
+    </section>
+
+    <section>
+        <h2>Other Multimedia</h2>
+        <p>SVG image:</p>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+
+        <p>Canvas (requires JavaScript for content):</p>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    </section>
+
+</body>
+</html>
