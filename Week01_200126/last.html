@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Web Application - Home</title>
+    <meta name="description" content="Comprehensive college web application showcasing HTML elements, attributes, and features.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 align="center">Welcome to FCRIT</h1>
+        <p align="center"><a href="#about">About</a> | <a href="#courses">Courses</a> | <a href="#timetable">Timetable</a> | <a href="#admission">Admission</a> | <a href="#contact">Contact</a></p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2 align="center">About Our College</h2>
+            <p>FCRIT, the Fr. Conceicao Rodrigues Institute of Technology, is a premier engineering college located in Bandra, Mumbai, India. Established in 1994, our institution has been at the forefront of technological education and innovation for over three decades. We offer a comprehensive range of undergraduate and postgraduate programs in engineering and technology, including Computer Science, Mechanical Engineering, Electronics and Telecommunication, and Information Technology.</p>
+            <p>At FCRIT, we are committed to providing <strong>quality education</strong> through a blend of theoretical knowledge and practical experience. Our faculty consists of experienced professors and industry experts who guide students in their academic journey. We boast <em>state-of-the-art facilities</em> including modern laboratories, well-equipped classrooms, a vast library with extensive digital resources, and advanced research centers.</p>
+            <p>Our campus provides a supportive learning environment with various extracurricular activities, sports facilities, and student clubs. We emphasize holistic development, encouraging students to participate in technical competitions, cultural events, and community service. With a strong focus on research and innovation, FCRIT has produced numerous successful alumni who have made significant contributions in various fields globally.</p>
+            <center><img src="image.png" alt="College logo" width="300" height="150"></center>
+            <p>For more information, visit our <a href="https://www.fcrit.ac.in" target="_blank">official website</a>.</p>
+        </section>
+
+        <section id="courses">
+            <h2 align="center">Available Courses</h2>
+            <ul>
+                <li>Computer Science</li>
+                <li>Business Administration</li>
+                <li>Engineering</li>
+                <li>Arts and Humanities</li>
+            </ul>
+            <ol>
+                <li>Undergraduate Programs</li>
+                <li>Postgraduate Programs</li>
+                <li>Diploma Courses</li>
+            </ol>
+        </section>
+
+        <section id="timetable">
+            <h2 align="center">Sample Timetable</h2>
+            <table border="1" align="center">
+                <caption>Weekly Class Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Math</td>
+                        <td>Physics</td>
+                        <td>Chemistry</td>
+                        <td>Biology</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM</td>
+                        <td>English</td>
+                        <td>Chemistry</td>
+                        <td>Math</td>
+                        <td>History</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM</td>
+                        <td>CS</td>
+                        <td>Bio</td>
+                        <td>Physics</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 AM</td>
+                        <td>maths</td>
+                        <td>Chemistry</td>
+                        <td>Physics</td>
+                        <td>English</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="admission">
+            <h2 align="center">Admission Form</h2>
+            <center><form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="course">Course:</label>
+                <select id="course" name="course">
+                    <option value="cs">Computer Science</option>
+                    <option value="ba">Business Admin</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit Application">
+            </form></center>
+        </section>
+
+        <section id="multimedia">
+            <h2 align="center">Multimedia Resources</h2>
+            <h3>Video Lecture</h3>
+            <video width="320" height="240" controls align="center">
+                <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Embedded Content</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="College Video" frameborder="0" allowfullscreen align="center"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p align="center">&copy; 2026 FCRIT. All rights reserved.</p>
+        <address align="center">
+            Contact us at <a href="mailto:info@fcrit.ac.in">info@fcrit.ac.in</a>
+        </address>
+    </footer>
+</body>
+</html>
