@@ -7,9 +7,9 @@ function Stats({ tasks }) {
 
   return (
     <div className="stats">
-      <div>Total: {total}</div>
-      <div>Completed: {completed}</div>
-      <div>Pending: {pending}</div>
+      <div>📋 Total: {total}</div>
+      <div>✅ Completed: {completed}</div>
+      <div>⏳ Pending: {pending}</div>
     </div>
   );
 }

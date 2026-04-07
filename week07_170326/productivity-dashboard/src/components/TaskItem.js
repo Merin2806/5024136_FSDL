@@ -10,14 +10,20 @@ function TaskItem({ task, toggleComplete, deleteTask }) {
       </td>
 
       <td>
-        <button onClick={() => toggleComplete(task.id)}>
-          ✔
-        </button>
+  <button
+    className="action-btn complete"
+    onClick={() => toggleComplete(task.id)}
+  >
+    ✔
+  </button>
 
-        <button onClick={() => deleteTask(task.id)}>
-          ❌
-        </button>
-      </td>
+  <button
+    className="action-btn delete"
+    onClick={() => deleteTask(task.id)}
+  >
+    ❌
+  </button>
+</td>
     </tr>
   );
 }
