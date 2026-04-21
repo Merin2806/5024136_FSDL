@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJS Hello World</title>
+
+  <!-- AngularJS CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f4f4f4;
+    }
+
+    .box {
+      background: white;
+      padding: 20px;
+      width: 300px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+
+    input {
+      padding: 8px;
+      width: 80%;
+      margin-top: 10px;
+    }
+
+    h2 {
+      color: #333;
+    }
+  </style>
+</head>
+
+<body ng-controller="myController">
+
+  <div class="box">
+    <h2>Hello World using AngularJS</h2>
+
+    <!-- ng-model -->
+    <input type="text" ng-model="name" placeholder="Enter your name">
+
+    <!-- Data binding -->
+    <p>Hello, {{name}} 👋</p>
+  </div>
+
+  <script>
+    // Create module
+    var app = angular.module("myApp", []);
+
+    // Create controller
+    app.controller("myController", function($scope) {
+      $scope.name = "Student";
+    });
+  </script>
+
+</body>
+</html>
